@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnfip4cm7p37b"]
+
+[ext_resource type="PackedScene" uid="uid://bfjnhp174nn4y" path="res://Scenes/Player/basic_player.tscn" id="1_y4ipy"]
+
+[node name="Unit-movement-testing" type="Node2D"]
+
+[node name="BasicPlayer" parent="." instance=ExtResource("1_y4ipy")]
+position = Vector2(598, 348)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(304, 179)
