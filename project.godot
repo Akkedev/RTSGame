@@ -14,6 +14,7 @@ config/name="RTSGame"
 run/main_scene="uid://bmg0x1grmku58"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+<<<<<<<HEADrun/main_scene="uid://bmg0x1grmku58"
 
 [input]
 
