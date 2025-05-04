@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://cane5op5vpsby"]
+
+[ext_resource type="Texture2D" uid="uid://ckyp4hewkxgwe" path="res://icon.svg" id="1_jf23r"]
+[ext_resource type="PackedScene" uid="uid://dfr1d1jtbbnrb" path="res://prefabs_jos_ois/camera.tscn" id="2_gokac"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jf23r"]
+size = Vector2(20, 20)
+orientation = 2
+
+[node name="TestSceneCamera" type="Node2D"]
+
+[node name="_player_" type="Sprite2D" parent="."]
+position = Vector2(572, 358)
+texture = ExtResource("1_jf23r")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(752, 596)
+texture = ExtResource("1_jf23r")
+
+[node name="Icon3" type="Sprite2D" parent="."]
+position = Vector2(-664, 685)
+texture = ExtResource("1_jf23r")
+
+[node name="Icon4" type="Sprite2D" parent="."]
+position = Vector2(-656, -352)
+texture = ExtResource("1_jf23r")
+
+[node name="Icon5" type="Sprite2D" parent="."]
+position = Vector2(777, -343)
+texture = ExtResource("1_jf23r")
+
+[node name="Camera" parent="." instance=ExtResource("2_gokac")]
+position = Vector2(572, 358)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+show_behind_parent = true
+position = Vector2(25, -13)
+scale = Vector2(93.55, 65.6)
+mesh = SubResource("PlaneMesh_jf23r")

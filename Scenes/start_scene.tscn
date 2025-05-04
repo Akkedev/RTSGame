@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://bmg0x1grmku58"]
+[gd_scene load_steps=3 format=3 uid="uid://bmg0x1grmku58"]
+
+[ext_resource type="PackedScene" uid="uid://dfr1d1jtbbnrb" path="res://prefabs_jos_ois/camera.tscn" id="1_82sop"]
+[ext_resource type="Texture2D" uid="uid://ckyp4hewkxgwe" path="res://icon.svg" id="2_aeweq"]
 
 [node name="Node3D" type="Node3D"]
+
+[node name="Camera" parent="." instance=ExtResource("1_82sop")]
+position = Vector2(4, 12)
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-13, -34)
+texture = ExtResource("2_aeweq")
