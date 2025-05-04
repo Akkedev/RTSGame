@@ -42,11 +42,8 @@ func camera_base_move(delta: float) -> void:
 	var velocity_direction: Vector2 = Vector2.ZERO
 	
 	if Input.is_action_pressed("camera_up"): velocity_direction -= transform.y
-	
 	if Input.is_action_pressed("camera_down"): velocity_direction += transform.y
-	
 	if Input.is_action_pressed("camera_left"): velocity_direction -= transform.x
-	
 	if Input.is_action_pressed("camera_right"): velocity_direction += transform.x
 	
 	position += velocity_direction.normalized() * delta * camera_move_speed
