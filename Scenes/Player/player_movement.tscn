@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ywwclxivxq8v"]
+
+[sub_resource type="GDScript" id="GDScript_e2juy"]
+script/source = "extends Node2D
+"
+
+[node name="PlayerMovement" type="Node2D"]
+script = SubResource("GDScript_e2juy")
