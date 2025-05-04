@@ -10,7 +10,6 @@ var moving : bool = false
 
 
 func _physics_process(delta: float) -> void:
-	print((target_position-self.global_position).dot(current_direction))
 	# check if player should be moving
 	if moving == false:
 		return
